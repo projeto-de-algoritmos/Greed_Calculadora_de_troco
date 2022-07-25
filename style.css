@@ -37,6 +37,10 @@ button {
     align-items: center;
     margin-top: 40px;
     gap: 4px;
+    background-color: #031725;
+    border-radius: 12px;
+    padding: 40px 0;
+
 }
 
 .form button {
@@ -61,3 +65,14 @@ button {
     font-size: 18px;
     margin-top: 16px;
 }
+
+.container {
+    color: #fff;
+    margin-top: 24px;
+}
+
+.container button {
+    padding: 12px 16px;
+    margin-top: 12px;
+}
+

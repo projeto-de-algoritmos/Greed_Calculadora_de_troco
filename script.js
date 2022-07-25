@@ -59,23 +59,37 @@ function calculaMoedas(moedas, valor) {
     exibe(qtd, moedas)
 }
 
+const result = document.querySelector('.result')
+
 function exibe(qtd, moedas) {
-    const result = document.querySelector('.result')
 
     for (let i = 0; i < qtd.length; i++) {
         let element = document.createElement('p')
-        element.textContent = `Quantidade de notas/moedas de ${moedas[i]}: ${qtd[i]}`
+        element.textContent = `Quantidade de notas/moedas de R$${moedas[i]}: ${qtd[i]}`
         element.classList.add('qtdMoeda')
         result.appendChild(element)
     }
 
     for (let i = 0; i < moedas.length - qtd.length; i++) {
         let element = document.createElement('p')
-        element.textContent = `Quantidade de notas/moedas de ${moedas[moedas.length - i - 1]}: 0`
+        element.textContent = `Quantidade de notas/moedas de R$${moedas[moedas.length - i - 1]}: 0`
         element.classList.add('qtdMoeda')
         result.appendChild(element)
     }
 
     console.log(result)
-    
 }
+
+const clear = document.querySelector('.clear')
+
+clear.addEventListener('click', () => {
+    input[0].value = ''
+    input[1].value = ''
+    input[2].value = ''
+
+    const paragrafos = document.querySelectorAll('.qtdMoeda')
+    for (let i = 0; i < paragrafos.length; i++) {
+        paragrafos[i].parentNode.removeChild(paragrafos[i])
+    }
+    
+})
