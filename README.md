@@ -14,31 +14,60 @@ Temas:
 
 # NomedoProjeto
 
-**Número da Lista**: X<br>
-**Conteúdo da Disciplina**: XXXXXXXXXX<br>
+**Conteúdo da Disciplina**: Greed<br>
 
 ## Alunos
 |Matrícula | Aluno |
 | -- | -- |
-| xx/xxxxxx  |  xxxx xxxx xxxxx |
-| xx/xxxxxx  |  xxxx xxxx xxxxx |
+| 19/0027088 |  Eliás Yousef Santana Ali |
+| 20/0038141  | Gustavo Duarte Moreira |
 
 ## Sobre 
-Descreva os objetivos do seu projeto e como ele funciona. 
+O projeto consiste em uma calculadora de troco, em que o usuário da calculadora insere o valor recebido do cliente, o valor gasto pelo cliente e quais são os valores das notas disponíveis no seu caixa. O sistema calcula a quantidade mínima de notas para devolver o troco para o cliente.
+
 
 ## Screenshots
-Adicione 3 ou mais screenshots do projeto em funcionamento.
+
+
+![Exemplo de troco 1](img/calculatroco1.gif)
+
+
+
+![Exemplo de troco 1](img/calculatroco2.gif)
+
+
+
+![Exemplo de troco 1](img/calculatroco3.gif)
 
 ## Instalação 
-**Linguagem**: xxxxxx<br>
-**Framework**: (caso exista)<br>
-Descreva os pré-requisitos para rodar o seu projeto e os comandos necessários.
+**Linguagem**: javascript<br>
+**Framework**: N/A<br>
+
+***Pre-requsitos***
+
+Possuir um navegador de internet instalado na máquina.
 
 ## Uso 
-Explique como usar seu projeto caso haja algum passo a passo após o comando de execução.
-
+**Clonar o repositório**
+```
+    git clone https://github.com/projeto-de-algoritmos/Greed_Calculadora_de_troco.git
+```
+**Entar o repositório**
+```
+    cd Greed_Calculadora_de_troco/src
+```
+**Executar o comando**
+```
+    Abrir o arquivo index.html em um navegador
+```
 ## Outros 
-Quaisquer outras informações sobre seu projeto podem ser descritas abaixo.
+Observação: Os testes foram realizados em um computador com o sitema operacional UBUNTU 20.04.
+
+
+
+## Video
+
+[Video da apresentação](video/Greed_Calculadora_de_troco)
 
 
 
