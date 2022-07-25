@@ -1,17 +1,3 @@
-**!! Atenção: Renomeie o seu repositório para (Tema)_(NomeDoProjeto). !!** 
-
-Temas:
- - Grafos1
- - Grafos2
- - PD
- - D&C
- - Greed
- - Final 
- 
- **!! *Não coloque os nomes dos alunos no título do repositório*. Exemplo de título correto: Grafos2_Labirinto-do-Minotauro !!**
- 
- (Apague essa seção)
-
 # NomedoProjeto
 
 **Conteúdo da Disciplina**: Greed<br>
@@ -61,7 +47,7 @@ Possuir um navegador de internet instalado na máquina.
     Abrir o arquivo index.html em um navegador
 ```
 ## Outros 
-Observação: Os testes foram realizados em um computador com o sitema operacional UBUNTU 20.04.
+Observação: Os testes foram realizados em dois computadores um no sitema operacional UBUNTU 20.04 e outro no Windows 10.
 
 
 
