@@ -15,7 +15,10 @@ O projeto consiste em uma calculadora de troco, em que o usuário da calculadora
 ## Screenshots
 
 
-![Exemplo de troco 1](img/calculatroco1.gif)
+![Exemplo de troco 1](img/calculatroco0.png)
+
+
+![Exemplo de troco 1](img/calculatroco1.png)
 
 
 
