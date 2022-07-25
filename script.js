@@ -8,7 +8,7 @@ form.addEventListener('submit', (event) => {
     let preco = parseFloat(input[1].value)
     let moedaString = input[2].value
 
-    // moedaString = moedaString.replace(/\s/g, '')
+    moedaString = moedaString.replace(/\s/g, '')
     
     let moeda = []
     let num = ""
@@ -32,5 +32,50 @@ form.addEventListener('submit', (event) => {
 
 
 function calculaMoedas(moedas, valor) {
+    moedas.sort((a, b) => {
+        if (a > b) return -1
+        if (a < b) return 1
+        return 0
+    })
+    // console.log(moedas)
+
+    let i =  0
+    qtd = []
+    
+    while (valor >= moedas[moedas.length - 1]) {
+        if (valor >= moedas[i]) {
+            let div = parseInt(valor / moedas[i])
+            valor -= moedas[i] * div
+            qtd.push(div)
+        }
+        else {
+            div = 0
+            qtd.push(div)
+        }
+        i += 1
+    }
+    // console.log(qtd)
+
+    exibe(qtd, moedas)
+}
+
+function exibe(qtd, moedas) {
+    const result = document.querySelector('.result')
+
+    for (let i = 0; i < qtd.length; i++) {
+        let element = document.createElement('p')
+        element.textContent = `Quantidade de notas/moedas de ${moedas[i]}: ${qtd[i]}`
+        element.classList.add('qtdMoeda')
+        result.appendChild(element)
+    }
+
+    for (let i = 0; i < moedas.length - qtd.length; i++) {
+        let element = document.createElement('p')
+        element.textContent = `Quantidade de notas/moedas de ${moedas[moedas.length - i - 1]}: 0`
+        element.classList.add('qtdMoeda')
+        result.appendChild(element)
+    }
+
+    console.log(result)
     
 }
