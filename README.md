@@ -1,4 +1,4 @@
-# NomedoProjeto
+# Calculadora de troco
 
 **Conteúdo da Disciplina**: Greed<br>
 
